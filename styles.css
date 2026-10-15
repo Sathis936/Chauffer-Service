@@ -1233,6 +1233,182 @@ select option {
   color: var(--text-primary);
   padding: 10px;
 }
+
+/* ==========================================================================
+   CUSTOM LUXURY FORM DROPDOWN (CONSTRAINED TO BOX WIDTH FOR DESKTOP & MOBILE)
+   ========================================================================== */
+.custom-select-wrap {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.custom-select-original {
+  display: none !important;
+}
+
+.custom-select-trigger {
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.custom-select-trigger:hover,
+.custom-select-wrap.is-open .custom-select-trigger {
+  border-color: var(--gold-accent);
+}
+
+.custom-select-wrap.is-open .custom-select-trigger,
+.custom-select-trigger:focus-visible {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px var(--gold-glow);
+  background-color: var(--bg-card);
+}
+
+.custom-select-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 12px;
+  text-align: left;
+}
+
+[dir="rtl"] .custom-select-text {
+  padding-right: 0;
+  padding-left: 12px;
+  text-align: right;
+}
+
+.custom-select-arrow {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-normal);
+  color: var(--gold-primary);
+}
+
+.custom-select-wrap.is-open .custom-select-arrow {
+  transform: rotate(180deg);
+}
+
+.custom-select-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--gold-primary);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  max-height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding: 4px 0;
+  display: none;
+  animation: dropdownFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.custom-select-wrap.is-open .custom-select-menu {
+  display: block;
+}
+
+.custom-select-option {
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+[dir="rtl"] .custom-select-option {
+  text-align: right;
+}
+
+.custom-select-option:last-child {
+  border-bottom: none;
+}
+
+.custom-select-option:hover,
+.custom-select-option.is-highlighted {
+  background-color: rgba(212, 175, 55, 0.12);
+  color: var(--gold-primary);
+}
+
+.custom-select-option.is-selected {
+  background-color: rgba(212, 175, 55, 0.18);
+  color: var(--gold-primary);
+  font-weight: 700;
+}
+
+.custom-select-option.is-selected::after {
+  content: "✓";
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--gold-primary);
+  margin-left: 8px;
+}
+
+[dir="rtl"] .custom-select-option.is-selected::after {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.custom-select-menu::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-select-menu::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+}
+.custom-select-menu::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-pill);
+}
+.custom-select-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
+
 .contact-form textarea {
   height: auto;
   padding: 14px 18px;
@@ -3408,6 +3584,15 @@ select option {
     gap: 32px;
   }
 }
+@media (max-width: 580px) {
+  .estimator-card {
+    padding: 24px 16px;
+  }
+}
+.estimator-card,
+.estimator-inputs {
+  min-width: 0;
+}
 .estimator-inputs {
   display: flex;
   flex-direction: column;
@@ -3418,6 +3603,7 @@ select option {
 .estimator-inputs .form-field-group {
   margin-bottom: 0;
   width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
@@ -3434,6 +3620,7 @@ select option {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   width: 100%;
+  min-width: 0;
 }
 @media (max-width: 620px) {
   .estimator-inputs .form-row {

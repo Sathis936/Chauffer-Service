@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your Maison Royal executive client portal.">
+  <title>Client Sign In | Maison Royal</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="portal-page">
+  <!-- Minimalist Luxury Login Header: Brand with RTL & Theme Controls Alone -->
+  <header class="login-header">
+    <div class="container login-header-wrap">
+      <a class="brand" href="index.html" aria-label="Maison Royal Home">
+        <svg class="brand-logo-icon" width="38" height="38" viewBox="0 0 44 44" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="44" height="44" rx="10" fill="url(#crestBgGradLog)" />
+          <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="url(#crestGoldGradLog)" stroke-width="2"
+            fill="none" />
+          <path d="M15 27V16L22 22L29 16V27" stroke="url(#crestGoldGradLog)" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+          <defs>
+            <linearGradient id="crestBgGradLog" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1A202C" />
+              <stop offset="1" stop-color="#0A0D12" />
+            </linearGradient>
+            <linearGradient id="crestGoldGradLog" x1="10" y1="6" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FCE7A1" />
+              <stop offset="0.5" stop-color="#D4AF37" />
+              <stop offset="1" stop-color="#AA771C" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+      </a>
+
+      <div class="login-header-controls">
+        <!-- RTL Button: NO EMOJI, clean text alone -->
+        <button class="nav-ctrl-btn rtl-toggle" id="rtl-toggle" type="button" title="Switch text direction RTL/LTR"
+          aria-label="Toggle text direction RTL/LTR">
+          <span class="ctrl-text">RTL</span>
+        </button>
+
+        <!-- Theme Toggle Button: EMOJI ALONE, no text -->
+        <button class="nav-ctrl-btn theme-toggle" id="theme-toggle" type="button" title="Toggle theme"
+          aria-label="Toggle dark/light theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Main: Image Removed, Credentials Card Centered Alone -->
+  <main class="login-main">
+    <div class="login-panel">
+      <div class="login-card">
+        <div class="login-card-header">
+          <a class="brand login-card-brand" href="index.html" aria-label="Maison Royal">
+            <svg class="brand-logo-icon" width="38" height="38" viewBox="0 0 44 44" fill="none">
+              <rect width="44" height="44" rx="10" fill="#1A202C" />
+              <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="#D4AF37" stroke-width="2" fill="none" />
+              <path d="M15 27V16L22 22L29 16V27" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+            </svg>
+            <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+          </a>
+          <p class="eyebrow" style="justify-content: center;"><span class="eyebrow-line"></span> Client Portal</p>
+          <h1>Welcome <em>Back</em></h1>
+          <p class="login-subtitle">Sign in to manage your journeys and VIP travel preferences.</p>
+        </div>
+
+        <form data-login-form novalidate>
+          <div class="form-field-group">
+            <label for="email">Corporate or Personal Email <span style="color: var(--gold-primary);">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" data-validate="email" placeholder="alexander.wright@maisonride.com"
+              required>
+          </div>
+
+          <div class="form-field-group">
+            <label for="password">Password <span style="color: var(--gold-primary);">*</span></label>
+            <input id="password" name="password" type="password" autocomplete="current-password" data-validate="required"
+              placeholder="••••••••••••" required minlength="4">
+          </div>
+
+          <div class="login-options">
+            <label class="remember-me">
+              <input type="checkbox" name="remember" checked>
+              <span>Remember this device</span>
+            </label>
+            <a class="forgot-pass" href="#"
+              onclick="alert('Password reset instructions dispatched to your registered email.'); return false;">Forgot?</a>
+          </div>
+
+          <button class="button button-dark login-submit" type="submit">
+            Sign In to Portal <span aria-hidden="true">→</span>
+          </button>
+          <p class="form-message" aria-live="polite"></p>
+
+
+
+        </form>
+
+
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

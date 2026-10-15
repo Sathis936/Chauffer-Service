@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manage executive business travel with a Maison Royal corporate chauffeur account.">
+  <title>Corporate Accounts | Maison Royal</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Centered Luxury Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <!-- Left: Redesigned Royal Crest Logo -->
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="Maison Royal Home">
+          <svg class="brand-logo-icon" width="38" height="38" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="10" fill="url(#crestBgGrad5)" />
+            <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="url(#crestGoldGrad5)" stroke-width="2" fill="none" />
+            <path d="M15 27V16L22 22L29 16V27" stroke="url(#crestGoldGrad5)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+            <defs>
+              <linearGradient id="crestBgGrad5" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1A202C" />
+                <stop offset="1" stop-color="#0A0D12" />
+              </linearGradient>
+              <linearGradient id="crestGoldGrad5" x1="10" y1="6" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FCE7A1" />
+                <stop offset="0.5" stop-color="#D4AF37" />
+                <stop offset="1" stop-color="#AA771C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+        </a>
+      </div>
+
+      <!-- Center: Navigation Links (Centered) -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L5 5L9 1"/></svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a class="dropdown-item" href="index.html">
+              <span class="item-title">Home 1 — Classic Luxury <span>→</span></span>
+              <span class="item-desc">Editorial grand chauffeur experience</span>
+            </a>
+            <a class="dropdown-item" href="home2.html">
+              <span class="item-title">Home 2 — VIP Prestige Black <span>→</span></span>
+              <span class="item-desc">High-octane VIP black fleet & instant booking</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a aria-current="page" href="corporate.html">Corporate</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <!-- Right: Action Controls (RTL No Emoji, Theme Emoji Alone, Login) -->
+      <div class="nav-actions">
+        <!-- RTL Button: NO EMOJI, clean text alone -->
+        <button class="nav-ctrl-btn rtl-toggle" id="rtl-toggle" type="button" title="Switch text direction RTL/LTR" aria-label="Toggle text direction RTL/LTR">
+          <span class="ctrl-text">RTL</span>
+        </button>
+
+        <!-- Theme Toggle Button: EMOJI ALONE, no text -->
+        <button class="nav-ctrl-btn theme-toggle" id="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle dark/light theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Login Button: NO EMOJI -->
+        <a class="nav-action nav-login" href="login.html">Login</a>
+
+        <!-- Mobile Menu Toggle: Fixed position, never jumps left to right -->
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-corporate">
+      <div class="container page-hero-content">
+        <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Enterprise Transit Solutions</p>
+        <h1>Corporate Travel,<br><em>Seamlessly Managed.</em></h1>
+        <p class="body-copy" style="color: #f1f5f9; font-size: 18px; max-width: 580px;">Consolidate your global executive journeys into one transparent, centrally billed enterprise account with dedicated dispatch coordinators.</p>
+        <a class="button button-light" href="#get-started">Open Corporate Consultation <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="corporate-benefits section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Clear Corporate ROI</p>
+            <h2>Built for Financial Clarity and Executive Comfort</h2>
+          </div>
+          <p class="body-copy">Eliminate messy expense reports and erratic rideshare billing with centralized digital invoicing.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article>
+            <span class="benefit-num">01</span>
+            <h3>Consolidated Billing & VAT Reporting</h3>
+            <p>Single monthly itemized invoice broken down by employee, cost center, project code, and destination with full VAT compliance.</p>
+          </article>
+          <article>
+            <span class="benefit-num">02</span>
+            <h3>Bespoke Corporate Travel Policy</h3>
+            <p>Set custom allowances by tier, pre-approved vehicle classes, and delegated booking permissions for executive assistants.</p>
+          </article>
+          <article>
+            <span class="benefit-num">03</span>
+            <h3>Board & Client Hospitality</h3>
+            <p>Impress visiting foreign dignitaries, investment banking roadshows, and board members with impeccable white-glove chauffeur hospitality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="corporate-image-band">
+      <div class="container">
+        <div class="corporate-image-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Global Mobility Partnership</p>
+          <h2>Make room for<br><em>what truly drives business.</em></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise Volume Tier Calculator -->
+    <section class="section-pad" style="background: var(--bg-surface-elevated);" id="tier-calculator">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Corporate Tariff Structure</p>
+            <h2>Interactive Enterprise Tier Calculator</h2>
+          </div>
+          <p class="body-copy">Select your organization's anticipated monthly executive journey volume to see tiered savings, dedicated SLA guarantees, and priority dispatch benefits.</p>
+        </div>
+
+        <div class="tier-calc-card">
+          <div class="tier-buttons-grid">
+            <div class="tier-btn is-active" data-tier="silver" role="button" tabindex="0">
+              <strong>Silver Tier</strong>
+              <span>10–25 journeys/mo</span>
+            </div>
+            <div class="tier-btn" data-tier="gold" role="button" tabindex="0">
+              <strong>Gold Executive</strong>
+              <span>26–75 journeys/mo</span>
+            </div>
+            <div class="tier-btn" data-tier="platinum" role="button" tabindex="0">
+              <strong>Platinum Partner</strong>
+              <span>76–150 journeys/mo</span>
+            </div>
+            <div class="tier-btn" data-tier="enterprise" role="button" tabindex="0">
+              <strong>Global Enterprise</strong>
+              <span>150+ journeys/mo</span>
+            </div>
+          </div>
+
+          <div class="tier-stats-display">
+            <div>
+              <span class="tier-stat-num" id="tier-discount">10% Off</span>
+              <span class="tier-stat-label">Contracted Tariff Discount</span>
+            </div>
+            <div>
+              <span class="tier-stat-num" id="tier-sla">15 Mins</span>
+              <span class="tier-stat-label">Guaranteed Dispatch SLA</span>
+            </div>
+            <div>
+              <span class="tier-stat-num" id="tier-manager">Dedicated</span>
+              <span class="tier-stat-label">Senior Account Manager</span>
+            </div>
+            <div>
+              <span class="tier-stat-num" id="tier-grace">60 Mins</span>
+              <span class="tier-stat-label">Complimentary FBO Grace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="get-started">
+      <div class="container contact-grid">
+        <div class="corporate-inquiry-info">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Executive Inquiry</p>
+          <h2>Corporate Account Setup</h2>
+          <p class="body-copy">Complete this brief profile. A senior corporate account director will provide a customized rate card and corporate portal demo within 2 business hours.</p>
+
+          <div class="corporate-perks-list">
+            <div class="corporate-perk-item">
+              <span class="perk-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>Dedicated Senior Account Director</strong>
+                <span>Direct phone & encrypted line for 24/7 global executive travel coordination.</span>
+              </div>
+            </div>
+            <div class="corporate-perk-item">
+              <span class="perk-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>Consolidated Monthly VAT Invoicing</strong>
+                <span>Custom cost-center tagging, department codes, and automated expense exports.</span>
+              </div>
+            </div>
+            <div class="corporate-perk-item">
+              <span class="perk-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>Guaranteed Priority Dispatch SLA</strong>
+                <span>Pre-positioned luxury vehicles in central business districts and private FBO airfields.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="corporate-portal-callout">
+            <span>Existing corporate member?</span>
+            <a href="dashboard.html" class="corporate-dashboard-link">
+              Access Executive Dashboard Directly <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card corporate-form-card">
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="form-field-group">
+              <label for="company">Company or Firm Name <span style="color: var(--gold-primary);">*</span></label>
+              <input id="company" name="company" autocomplete="organization" data-validate="required" required placeholder="e.g. Goldman Sachs, Blackstone, or McKinsey">
+            </div>
+
+            <div class="form-field-group">
+              <label for="contact-name">Authorized Executive Contact <span style="color: var(--gold-primary);">*</span></label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" data-validate="name" required placeholder="First and last name">
+            </div>
+
+            <div class="form-field-group">
+              <label for="contact-email">Corporate Work Email <span style="color: var(--gold-primary);">*</span></label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" data-validate="email" required placeholder="contact@company.com">
+            </div>
+
+            <div class="form-field-group">
+              <label for="team-size">Estimated Monthly Volume <span style="color: var(--gold-primary);">*</span></label>
+              <select id="team-size" name="teamSize" data-validate="required" required>
+                <option value="">Select anticipated monthly volume</option>
+                <option>1–15 executive journeys / month</option>
+                <option>16–50 executive journeys / month</option>
+                <option>51–200 executive journeys / month</option>
+                <option>200+ global corporate journeys (Enterprise)</option>
+              </select>
+            </div>
+
+            <button class="button button-dark" type="submit" style="width: 100%; justify-content: center;">Submit Corporate Account Application <span aria-hidden="true">→</span></button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Travel FAQ Accordion -->
+    <section class="faq-section section-pad" id="corporate-faq">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Corporate Account Q&A</p>
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <p class="body-copy">Everything your legal, procurement, and executive assistant teams need to know about setting up a master corporate agreement.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item is-open">
+            <button class="faq-question" type="button">
+              <span>How does consolidated corporate invoicing and VAT reporting work?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Maison Royal issues itemized monthly or bi-weekly digital invoices categorized by cost center, internal project billing codes, and authorized executive names. Invoices include full itemized breakdown of mileage, toll surcharges, and local VAT/sales tax ready for automated upload into Concur, Coupa, or SAP.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can executive assistants and corporate travel desks book on behalf of executives?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Our enterprise portal supports multi-user delegate permissions. Executive assistants can book, reschedule, track live flight telematics, and receive instant chauffeur contact cards via SMS and email without disturbing the principal traveler.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What confidentiality and non-disclosure standards are enforced?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>All Maison Royal chauffeurs and dispatch operators sign comprehensive bilateral NDAs before employment. Cabin interiors are equipped with acoustic privacy partition dividers (in Maybach and Sprinter models), and client passenger manifests can be configured with anonymous VIP codenames for sensitive M&A roadshows.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What is the cancellation and rescheduling policy for corporate accounts?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Standard airport and point-to-point journeys can be cancelled or modified up to 2 hours prior to scheduled pickup with zero fee. For multi-day roadshows or diplomatic convoys, changes are accommodated seamlessly with dedicated standby dispatchers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxurious Equally-Aligned Multi-Column Footer -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <!-- Column 1: Brand & Socials -->
+      <div class="footer-brand-col">
+        <a class="brand brand-footer" href="index.html" aria-label="Maison Royal">
+          <svg class="brand-logo-icon" width="34" height="34" viewBox="0 0 44 44" fill="none">
+            <rect width="44" height="44" rx="10" fill="#1A202C" />
+            <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="#D4AF37" stroke-width="2" fill="none" />
+            <path d="M15 27V16L22 22L29 16V27" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+          </svg>
+          <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+        </a>
+        <p class="footer-tagline">Executive chauffeur service and bespoke private transit, crafted for discerning travelers worldwide.</p>
+        <!-- Social Media Icons (X, Instagram, LinkedIn, Facebook) -->
+        <div class="footer-social-row" aria-label="Social media channels">
+          <a class="social-icon-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" title="Follow us on X" aria-label="X (formerly Twitter)">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.449-1.44z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="Follow us on LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Navigation -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="fleet.html">Executive Fleet</a></li>
+          <li><a href="corporate.html">Corporate Travel</a></li>
+          <li><a href="blog.html">Journal & Insights</a></li>
+          <li><a href="contact.html">Contact & Map</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Client Portal -->
+      <div class="footer-col">
+        <h4>Client Portal</h4>
+        <ul class="footer-nav-list">
+          <li><a href="dashboard.html">Executive Dashboard</a></li>
+          <li><a href="contact.html#dispatch-form">Instant Journey Booking</a></li>
+          <li><a href="services.html#airport">Flight Tracker</a></li>
+          <li><a href="corporate.html#get-started">Open Corporate Account</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Support Services -->
+      <div class="footer-col">
+        <h4>Support Services</h4>
+        <ul class="footer-nav-list">
+          <li><a href="contact.html#dispatch-form">24/7 Dispatch Desk</a></li>
+          <li><a href="services.html#airport">Flight & FBO Support</a></li>
+          <li><a href="corporate.html#tier-calculator">Enterprise Travel Help</a></li>
+          <li><a href="contact.html#booking-faq">VIP Booking FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Centered Copyright (Privacy policy, terms & fleet dispatch removed!) -->
+    <div class="container footer-bottom-bar">
+      <p>© <span data-year></span> Maison Royal Worldwide Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

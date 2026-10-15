@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Maison Journal — Chronicles of sovereign chauffeur transit, private aviation tarmac protocols, VIP gala logistics, and luxury fleet innovations.">
+  <title>The Maison Journal | Editorial, Protocols & Chauffeur Insights</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Centered Luxury Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <!-- Left: Redesigned Royal Crest Logo -->
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="Maison Royal Home">
+          <svg class="brand-logo-icon" width="38" height="38" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="10" fill="url(#crestBgGradBlog)" />
+            <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="url(#crestGoldGradBlog)" stroke-width="2" fill="none" />
+            <path d="M15 27V16L22 22L29 16V27" stroke="url(#crestGoldGradBlog)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+            <defs>
+              <linearGradient id="crestBgGradBlog" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1A202C" />
+                <stop offset="1" stop-color="#0A0D12" />
+              </linearGradient>
+              <linearGradient id="crestGoldGradBlog" x1="10" y1="6" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FCE7A1" />
+                <stop offset="0.5" stop-color="#D4AF37" />
+                <stop offset="1" stop-color="#AA771C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+        </a>
+      </div>
+
+      <!-- Center: Navigation Links (Centered - Blog placed right after Corporate) -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L5 5L9 1"/></svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a class="dropdown-item" href="index.html">
+              <span class="item-title">Home 1 — Classic Luxury <span>→</span></span>
+              <span class="item-desc">Editorial grand chauffeur experience</span>
+            </a>
+            <a class="dropdown-item" href="home2.html">
+              <span class="item-title">Home 2 — VIP Prestige Black <span>→</span></span>
+              <span class="item-desc">High-octane VIP black fleet & instant booking</span>
+            </a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a href="corporate.html">Corporate</a>
+        <a aria-current="page" href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <!-- Right: Action Controls (RTL No Emoji, Theme Emoji Alone, Login) -->
+      <div class="nav-actions">
+        <!-- RTL Button: NO EMOJI, clean text alone -->
+        <button class="nav-ctrl-btn rtl-toggle" id="rtl-toggle" type="button" title="Switch text direction RTL/LTR" aria-label="Toggle text direction RTL/LTR">
+          <span class="ctrl-text">RTL</span>
+        </button>
+
+        <!-- Theme Toggle Button: EMOJI ALONE, no text -->
+        <button class="nav-ctrl-btn theme-toggle" id="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle dark/light theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Login Button: NO EMOJI -->
+        <a class="nav-action nav-login" href="login.html">Login</a>
+
+        <!-- Mobile Menu Toggle: Fixed position, never jumps left to right -->
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blog Page Hero -->
+    <section class="page-hero page-hero-blog">
+      <div class="container page-hero-content">
+        <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Sovereign Editorial & Insights</p>
+        <h1>The Maison Journal —<br><em>Chronicles of Sovereign Transit.</em></h1>
+        <p class="body-copy" style="color: #f1f5f9; font-size: 18px; max-width: 620px;">
+          Explore discreet chauffeur protocol, private aviation tarmac connections, multi-city corporate roadshow engineering, and the evolving frontier of electric luxury transit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Blog Controls Bar: Search & Category Tabs -->
+    <section class="blog-controls-section">
+      <div class="container">
+        <div class="blog-controls-bar">
+          <div class="blog-search-box">
+            <svg class="blog-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input class="blog-search-input" id="blog-search" type="search" placeholder="Search editorials, routes & protocols..." aria-label="Search articles">
+          </div>
+
+          <div class="blog-filter-tabs" role="tablist" aria-label="Filter articles by category">
+            <button class="filter-tab is-active" data-filter="all" type="button">All Articles</button>
+            <button class="filter-tab" data-filter="aviation" type="button">Aviation & FBO</button>
+            <button class="filter-tab" data-filter="protocol" type="button">Chauffeur Protocol</button>
+            <button class="filter-tab" data-filter="fleet" type="button">Fleet Innovations</button>
+            <button class="filter-tab" data-filter="roadshow" type="button">City & Roadshows</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Journal Content Section -->
+    <section class="section-pad" style="background-color: var(--bg-page);">
+      <div class="container">
+        <!-- Featured Editorial Article -->
+        <div class="featured-article-wrap">
+          <article class="featured-article-card" data-category="aviation" data-article-data='{"category":"Aviation & FBO Tarmac Protocols","title":"Direct Runway Transfers: Coordinating TEB, FAB & DWC Private Aviation Chauffeurs","meta":"October 12, 2026 · 6 Min Read · By Camille Devereaux","image":"https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1200&q=85","content":"<p>Airside vehicle ramp passes represent the peak of transit logistics. When a Gulfstream G650 or Bombardier Global 7500 touches down at Teterboro Airport (TEB), Farnborough (FAB), or Dubai Al Maktoum (DWC), minutes matter. Our chauffeurs do not wait outside the terminal; they are pre-positioned alongside the jet stairs on the active tarmac.</p><div class=\"article-modal-quote\">\"The measure of sovereign transit is not merely speed; it is the total eradication of friction between flight deck and luxury cabin.\"</div><p>Our airport operations team maintains direct communications with FBO flight line coordinators. Tail numbers are tracked via live radar feeds, automatically accounting for headwind variations and tarmac slot delays.</p><p>Passports and customs declarations are cleared through private lounge liaison desks before passengers ever reach the terminal building. Onboard luggage is handled with white-glove custody and transferred directly from the aircraft hold to our lined vehicle boots within seconds.</p><p>For international delegations and high-profile executives, this private aviation pipeline provides an unbroken sanctuary of privacy and total security from airborne touchdown to hotel penthouse entrance.</p>"}'>
+            <div class="featured-article-media">
+              <img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=1200&q=85" alt="Private Jet Runway Transfer">
+              <span class="featured-article-badge">Featured Editorial</span>
+            </div>
+            <div class="featured-article-body">
+              <span class="article-category">Aviation & FBO Tarmac Protocols</span>
+              <h2>Direct Runway Transfers: Coordinating TEB, FAB & DWC Private Aviation Chauffeurs</h2>
+              <p>From tarmac customs pre-clearance to synchronized jet stairs luggage transfer, discover the rigorous security standards and diplomatic timing behind our dedicated FBO airside transit teams.</p>
+              
+              <div class="article-meta-row">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80" alt="Camille Devereaux">
+                  <span>Camille Devereaux</span>
+                </div>
+                <span>•</span>
+                <span>October 12, 2026</span>
+                <span>•</span>
+                <span>6 Min Read</span>
+              </div>
+
+              <div>
+                <button class="button button-dark" data-article-btn type="button">
+                  Read Full Editorial <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Section Heading for Grid -->
+        <div class="section-heading" style="margin-bottom: 32px;">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Latest Chronicles</p>
+            <h2>In-Depth Perspectives on Luxury Movement</h2>
+          </div>
+          <p class="body-copy">Insights penned by our academy instructors, fleet directors, and international concierge leads.</p>
+        </div>
+
+        <!-- Empty Filter State (Hidden by default) -->
+        <div id="blog-empty-state" style="display: none; text-align: center; padding: 60px 20px; background: var(--bg-card); border: 1.5px dashed var(--border-color); border-radius: var(--radius-md); margin-bottom: 40px;">
+          <h3 style="font-family: var(--font-display); font-size: 24px; margin-bottom: 10px;">No Articles Found</h3>
+          <p style="color: var(--text-secondary); max-width: 420px; margin: 0 auto 20px;">We could not find any chronicles matching your search query. Please try different keywords or reset your filters.</p>
+          <button class="button button-gold" onclick="document.getElementById('blog-search').value=''; document.querySelector('.filter-tab[data-filter=all]').click();" type="button">Reset All Filters</button>
+        </div>
+
+        <!-- 6 Detailed Editorial Articles Grid -->
+        <div class="blog-grid" id="blog-grid">
+          <!-- Article 1: Chauffeur Protocol -->
+          <article class="blog-card" data-category="protocol" data-article-data='{"category":"Chauffeur Protocol","title":"The Sovereign Code: 10 Unwritten Rules of Diplomatic Chauffeur Etiquette","meta":"October 8, 2026 · 5 Min Read · By Arthur Pendelton","image":"https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80","content":"<p>At Maison Royal, driving is only twenty percent of a chauffeur’s duty; the remaining eighty percent is discretion, psychological intuition, and absolute protocol mastery.</p><div class=\"article-modal-quote\">\"The greatest luxury inside a moving sanctuary is unprompted silence. A professional chauffeur speaks only when addressed, with concise elegance.\"</div><p>Rule 1: The Speech Boundary. Never initiate casual dialogue with a dignitary or executive. When spoken to, reply with measured deference without offering unsolicited opinions on business or politics.</p><p>Rule 2: Rearview Mirror Gaze Protocol. The rearview mirror is positioned strictly for vehicular telemetry and situational awareness, never for observing passenger expressions or interactions.</p><p>Rule 3: Cabin Temperature Invariance. The cabin climate is calibrated to precisely 20.5°C prior to passenger arrival, with bespoke mineral water varieties chilled according to the passenger profile.</p><p>Rule 4: Door Opening Precision. A chauffeur never unlocks and rushes around the vehicle in haste; egress is executed with fluid, rhythmic poise, placing the chauffeur at the passenger door within four seconds of coming to a standstill.</p>"}'>
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80" alt="Chauffeur steering wheel and cabin etiquette">
+              <span class="blog-tag">Protocol</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="article-category">Chauffeur Protocol</span>
+              <h3 class="blog-card-title">The Sovereign Code: 10 Unwritten Rules of Diplomatic Chauffeur Etiquette</h3>
+              <p class="blog-card-excerpt">Discretion is our foremost currency. Why true white-glove chauffeurs prioritize total speech restraint, tactical route discretion, and cabin climate harmony.</p>
+              
+              <div class="article-meta-row" style="margin-top: auto; margin-bottom: 16px;">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Arthur Pendelton">
+                  <span>Arthur Pendelton</span>
+                </div>
+                <span>•</span>
+                <span>5 Min Read</span>
+              </div>
+
+              <div>
+                <button class="blog-read-btn" data-article-btn type="button">
+                  Read Article <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2: Fleet Innovations -->
+          <article class="blog-card" data-category="fleet" data-article-data='{"category":"Fleet Innovations","title":"Silent Grandeur: Integrating All-Electric Power into Executive Fleets","meta":"September 29, 2026 · 7 Min Read · By Marcus Vance","image":"https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=80","content":"<p>The transition to zero-emission luxury is not an ecological concession; it is an acoustic revelation. For decades, coachbuilders isolated V12 engines with hundreds of kilograms of bitumen insulation. With modern electric powertrains, silence is natural.</p><div class=\"article-modal-quote\">\"In our road tests between Mayfair and the Cotswolds, rear-cabin ambient noise levels measured under 54 decibels at 70 mph—quieter than a Swiss library reading room.\"</div><p>Deploying electric luxury saloons such as the Rolls-Royce Spectre and Mercedes-Maybach EQS across our international hubs requires bespoke fast-charging infrastructure at private FBO airports and flagship hotels.</p><p>We pair each vehicle with proprietary predictive battery telemetry. Chauffeurs receive route calculations that guarantee a minimum 25% battery reserve buffer even in adverse winter sub-zero temperatures with active seat warmers and massage functions operating continuously.</p>"}'>
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=80" alt="Mercedes-Maybach luxury electric saloon with gold trim">
+              <span class="blog-tag">Fleet</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="article-category">Fleet Innovations</span>
+              <h3 class="blog-card-title">Silent Grandeur: Integrating All-Electric Power into Executive Fleets Operations</h3>
+              <p class="blog-card-excerpt">Evaluating acoustic quietness, battery reserve margins, and bespoke rear-cabin charging telemetry on long-distance European transit corridors.</p>
+              
+              <div class="article-meta-row" style="margin-top: auto; margin-bottom: 16px;">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance">
+                  <span>Marcus Vance</span>
+                </div>
+                <span>•</span>
+                <span>7 Min Read</span>
+              </div>
+
+              <div>
+                <button class="blog-read-btn" data-article-btn type="button">
+                  Read Article <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3: City & Roadshows -->
+          <article class="blog-card" data-category="roadshow" data-article-data='{"category":"City & Roadshows","title":"Red Carpet Navigation: Paris Haute Couture & Cannes VIP Arrival Logistics","meta":"September 21, 2026 · 6 Min Read · By Elena Rostova","image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80","content":"<p>High-profile galas, film festivals, and fashion weeks transform world capitals into gridlocked security corridors. Successfully navigating these events requires advance coordination with municipal police prefectures and event logistics commands.</p><div class=\"article-modal-quote\">\"The secret to flawless red carpet egress is knowing the three alternative underground subterranean service exits that paparazzi and general traffic never see.\"</div><p>During the Cannes Film Festival and Paris Fashion Week, Maison Royal coordinates vehicle security passes months in advance. Chauffeurs rehearse drop-off angles to ensure the vehicle door shields passengers from flash photography until they are ready to step onto the carpet.</p><p>Vehicle holding areas are mapped with satellite GPS geo-fencing so that when an honoree sends a single signal, their vehicle glides to the departure cordon in less than 90 seconds.</p>"}'>
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Parisian luxury architecture Grand Palais evening">
+              <span class="blog-tag">Roadshows</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="article-category">City & Roadshows</span>
+              <h3 class="blog-card-title">Red Carpet Navigation: Paris Haute Couture & Cannes VIP Arrival Logistics</h3>
+              <p class="blog-card-excerpt">Bypassing congested red-zone cordons with police-escorted accreditation passes, VIP holding staging areas, and zero-hesitation egress.</p>
+              
+              <div class="article-meta-row" style="margin-top: auto; margin-bottom: 16px;">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova">
+                  <span>Elena Rostova</span>
+                </div>
+                <span>•</span>
+                <span>6 Min Read</span>
+              </div>
+
+              <div>
+                <button class="blog-read-btn" data-article-btn type="button">
+                  Read Article <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4: City & Roadshows -->
+          <article class="blog-card" data-category="roadshow" data-article-data='{"category":"City & Roadshows","title":"The 14-Hour Multi-City Roadshow: Managing Frictionless Corporate Board Itineraries","meta":"September 14, 2026 · 8 Min Read · By Victoria Sterling","image":"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80","content":"<p>An investment banking IPO roadshow or transnational merger negotiation demands relentless precision. Senior executives may attend five board meetings, a luncheon address, and a private investor dinner in a single day across varying urban zones.</p><div class=\"article-modal-quote\">\"The vehicle is no longer transit; it is a secure mobile boardroom equipped with encrypted 5G data routers and dual AC charging points.\"</div><p>Our dedicated roadshow desk designs backup routing itineraries that account for spontaneous schedule overruns. If an M&A negotiation extends by 45 minutes, the chauffeur immediately re-routes to the subsequent destination using live traffic predictive models.</p><p>Refreshments, printing facilities for confidential prospectuses, and private acoustic privacy glass ensure that board members never lose a productive minute between financial districts.</p>"}'>
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80" alt="Financial district city avenue traffic">
+              <span class="blog-tag">Roadshows</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="article-category">City & Roadshows</span>
+              <h3 class="blog-card-title">The 14-Hour Multi-City Roadshow: Managing Frictionless Corporate Board Itineraries</h3>
+              <p class="blog-card-excerpt">When investment bankers and CEOs navigate 6 meetings across financial centers, precision standby time and mobile office amenities guarantee deal success.</p>
+              
+              <div class="article-meta-row" style="margin-top: auto; margin-bottom: 16px;">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Victoria Sterling">
+                  <span>Victoria Sterling</span>
+                </div>
+                <span>•</span>
+                <span>8 Min Read</span>
+              </div>
+
+              <div>
+                <button class="blog-read-btn" data-article-btn type="button">
+                  Read Article <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5: Chauffeur Protocol -->
+          <article class="blog-card" data-category="protocol" data-article-data='{"category":"Chauffeur Protocol","title":"White-Glove Baggage Custody: Preserving Couture, Timepieces & Valuables","meta":"September 7, 2026 · 4 Min Read · By Arthur Pendelton","image":"https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=900&q=80","content":"<p>High-value luggage requires specialized care beyond ordinary handling. From delicate garment bags containing hand-beaded gowns to locked watch travel cases and rare vintage wines, baggage custody is an art form.</p><div class=\"article-modal-quote\">\"A Maison Royal chauffeur handles every trunk with protective felt underlays and never allows luggage to make contact with pavement surfaces.\"</div><p>Our fleet boots are custom upholstered in padded anti-abrasion microsuede. Specialized vertical garment hanging bars are installed in our extended wheelbase SUVs and luxury Sprinters to ensure gala attire remains wrinkle-free.</p><p>For clients transporting precious jewelry or high-value documents, our chauffeurs maintain continuous visual custody from hotel room door to airport check-in desk, ensuring zero chain-of-custody gaps.</p>"}'>
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&w=900&q=80" alt="Luxury bespoke leather luggage travel trunk">
+              <span class="blog-tag">Protocol</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="article-category">Chauffeur Protocol</span>
+              <h3 class="blog-card-title">White-Glove Baggage Custody: Preserving Couture, Timepieces & Valuables</h3>
+              <p class="blog-card-excerpt">How Maison Royal chauffeurs handle bespoke Rimowa trunks, Hermès travel luggage, and temperature-sensitive goods without leaving passenger custody.</p>
+              
+              <div class="article-meta-row" style="margin-top: auto; margin-bottom: 16px;">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Arthur Pendelton">
+                  <span>Arthur Pendelton</span>
+                </div>
+                <span>•</span>
+                <span>4 Min Read</span>
+              </div>
+
+              <div>
+                <button class="blog-read-btn" data-article-btn type="button">
+                  Read Article <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6: Aviation & FBO -->
+          <article class="blog-card" data-category="aviation" data-article-data='{"category":"Aviation & FBO","title":"Behind the Wheel with Master Chauffeurs: Inside the Maison Royal Academy","meta":"August 30, 2026 · 7 Min Read · By Lord Julian Ashford","image":"https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80","content":"<p>Only four percent of licensed professional drivers pass the rigorous entrance trials of the Maison Royal Chauffeur Academy. Located at an airbase testing facility outside London, the academy tests candidates far beyond ordinary road skills.</p><div class=\"article-modal-quote\">\"A driver focuses on the vehicle in front of them; a Master Chauffeur observes the traffic pulse three miles ahead and navigates without a tremor.\"</div><p>Candidates complete skid-pan dynamics, defensive obstacle evasion, close-protection motorcade spacing, and advanced medical CPR life support certification.</p><p>Furthermore, each student must memorize hundreds of municipal landmark shortcuts, hotel entrance heights, and diplomatic embassy protocols in London, Paris, New York, and Dubai before earning the engraved gold Maison Royal crest pin.</p>"}'>
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80" alt="Executive gentleman in tailored suit checking luxury timepiece">
+              <span class="blog-tag">Aviation</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="article-category">Aviation & FBO</span>
+              <h3 class="blog-card-title">Behind the Wheel with Master Chauffeurs: Inside the Maison Royal Academy</h3>
+              <p class="blog-card-excerpt">Only 4% of licensed applicants receive our royal pin. A rare look into our private tactical skid-pan training, medical certification, scholarships, and route exams.</p>
+              
+              <div class="article-meta-row" style="margin-top: auto; margin-bottom: 16px;">
+                <div class="article-author-chip">
+                  <img class="article-author-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Lord Julian Ashford">
+                  <span>Lord Julian Ashford</span>
+                </div>
+                <span>•</span>
+                <span>7 Min Read</span>
+              </div>
+
+              <div>
+                <button class="blog-read-btn" data-article-btn type="button">
+                  Read Article <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- VIP Concierge Newsletter & Booking CTA -->
+        <div class="dispatch-newsletter-card">
+          <div class="dispatch-newsletter-grid">
+            <div class="dispatch-newsletter-content">
+              <p class="eyebrow"><span class="eyebrow-line"></span> Private Intelligence</p>
+              <h2 class="dispatch-newsletter-title">Receive the Quarterly Maison Dispatch</h2>
+              <p class="body-copy">Curated briefings on seasonal private aviation routes, premier global galas, and VIP transit updates delivered directly to your executive inbox.</p>
+            </div>
+
+            <div class="dispatch-newsletter-action-wrap">
+              <form class="newsletter-form dispatch-form" novalidate>
+                <div class="dispatch-form-row">
+                  <div class="dispatch-input-box">
+                    <svg class="dispatch-input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="M22 6L12 13L2 6"></path>
+                    </svg>
+                    <input class="dispatch-email-input" type="email" data-validate="email" placeholder="executive@company.com" required aria-label="Email for newsletter">
+                  </div>
+                  <button class="button button-gold dispatch-submit-btn" type="submit">Subscribe</button>
+                </div>
+              </form>
+
+              <div class="dispatch-secondary-row">
+                <div class="dispatch-trust-badge">
+                  <svg class="dispatch-trust-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                  <span>Strict Discretion Assured</span>
+                </div>
+                <a class="button button-dark dispatch-booking-cta" href="contact.html#dispatch-form">
+                  <span>Instant Journey Booking</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Article Reading Modal -->
+  <div class="article-modal-backdrop" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="article-modal-content">
+      <button class="article-modal-close" type="button" aria-label="Close article reading view">✕</button>
+      
+      <div class="article-modal-header">
+        <span class="article-category" id="modal-category">Article Category</span>
+        <h2 id="modal-title">Article Title</h2>
+        <div class="article-meta-row" id="modal-meta" style="margin-bottom: 0;">Author & Date Details</div>
+      </div>
+
+      <img class="article-modal-image" id="modal-image" src="" alt="Article feature">
+
+      <div class="article-modal-body" id="modal-body">
+        <!-- Injected via script.js -->
+      </div>
+
+      <div class="article-modal-cta">
+        <div>
+          <strong style="color: var(--text-primary); font-size: 16px; display: block; margin-bottom: 4px;">Experience This Standard of Travel</strong>
+          <span style="color: var(--text-secondary); font-size: 13.5px;">Book your private chauffeur transfer with 24/7 dedicated flight and itinerary tracking.</span>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a class="button button-gold" href="contact.html#dispatch-form">Reserve Now</a>
+          <a class="button button-dark" href="contact.html">Dispatch Desk</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Luxurious Equally-Aligned Multi-Column Footer -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <!-- Column 1: Brand & Socials -->
+      <div class="footer-brand-col">
+        <a class="brand brand-footer" href="index.html" aria-label="Maison Royal">
+          <svg class="brand-logo-icon" width="34" height="34" viewBox="0 0 44 44" fill="none">
+            <rect width="44" height="44" rx="10" fill="#1A202C" />
+            <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="#D4AF37" stroke-width="2" fill="none" />
+            <path d="M15 27V16L22 22L29 16V27" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+          </svg>
+          <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+        </a>
+        <p class="footer-tagline">Executive chauffeur service and bespoke private transit, crafted for discerning travelers worldwide.</p>
+        <!-- Social Media Icons (X, Instagram, LinkedIn, Facebook) -->
+        <div class="footer-social-row" aria-label="Social media channels">
+          <a class="social-icon-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" title="Follow us on X" aria-label="X (formerly Twitter)">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.449-1.44z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="Follow us on LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Navigation -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="fleet.html">Executive Fleet</a></li>
+          <li><a href="corporate.html">Corporate Travel</a></li>
+          <li><a href="blog.html">Journal & Insights</a></li>
+          <li><a href="contact.html">Contact & Map</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Client Portal -->
+      <div class="footer-col">
+        <h4>Client Portal</h4>
+        <ul class="footer-nav-list">
+          <li><a href="dashboard.html">Executive Dashboard</a></li>
+          <li><a href="contact.html#dispatch-form">Instant Journey Booking</a></li>
+          <li><a href="services.html#airport">Flight Tracker</a></li>
+          <li><a href="corporate.html#get-started">Open Corporate Account</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Support Services -->
+      <div class="footer-col">
+        <h4>Support Services</h4>
+        <ul class="footer-nav-list">
+          <li><a href="contact.html#dispatch-form">24/7 Dispatch Desk</a></li>
+          <li><a href="services.html#airport">Flight & FBO Support</a></li>
+          <li><a href="corporate.html#tier-calculator">Enterprise Travel Help</a></li>
+          <li><a href="contact.html#booking-faq">VIP Booking FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Centered Copyright (Privacy policy, terms & fleet dispatch removed!) -->
+    <div class="container footer-bottom-bar">
+      <p>© <span data-year></span> Maison Royal Worldwide Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

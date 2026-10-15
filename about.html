@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Maison Royal — A heritage of sovereign excellence, chauffeur academy standards, and executive leadership in luxury transit since 2012.">
+  <title>About Us | Maison Royal Luxury Chauffeur</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Centered Luxury Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <!-- Left: Redesigned Royal Crest Logo -->
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="Maison Royal Home">
+          <svg class="brand-logo-icon" width="38" height="38" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="10" fill="url(#crestBgGradAbt)" />
+            <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="url(#crestGoldGradAbt)" stroke-width="2" fill="none" />
+            <path d="M15 27V16L22 22L29 16V27" stroke="url(#crestGoldGradAbt)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+            <defs>
+              <linearGradient id="crestBgGradAbt" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1A202C" />
+                <stop offset="1" stop-color="#0A0D12" />
+              </linearGradient>
+              <linearGradient id="crestGoldGradAbt" x1="10" y1="6" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FCE7A1" />
+                <stop offset="0.5" stop-color="#D4AF37" />
+                <stop offset="1" stop-color="#AA771C" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+        </a>
+      </div>
+
+      <!-- Center: Navigation Links (Centered) -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L5 5L9 1"/></svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a class="dropdown-item" href="index.html">
+              <span class="item-title">Home 1 — Classic Luxury <span>→</span></span>
+              <span class="item-desc">Editorial grand chauffeur experience</span>
+            </a>
+            <a class="dropdown-item" href="home2.html">
+              <span class="item-title">Home 2 — VIP Prestige Black <span>→</span></span>
+              <span class="item-desc">High-octane VIP black fleet & instant booking</span>
+            </a>
+          </div>
+        </div>
+        <a aria-current="page" href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+
+      <!-- Right: Action Controls (RTL No Emoji, Theme Emoji Alone, Login) -->
+      <div class="nav-actions">
+        <!-- RTL Button: NO EMOJI, clean text alone -->
+        <button class="nav-ctrl-btn rtl-toggle" id="rtl-toggle" type="button" title="Switch text direction RTL/LTR" aria-label="Toggle text direction RTL/LTR">
+          <span class="ctrl-text">RTL</span>
+        </button>
+
+        <!-- Theme Toggle Button: EMOJI ALONE, no text -->
+        <button class="nav-ctrl-btn theme-toggle" id="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle dark/light theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Login Button: NO EMOJI -->
+        <a class="nav-action nav-login" href="login.html">Login</a>
+
+        <!-- Mobile Menu Toggle: Fixed position, never jumps left to right -->
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Page Hero -->
+    <section class="page-hero page-hero-about">
+      <div class="container page-hero-content">
+        <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Established 2012 · Mayfair & Manhattan</p>
+        <h1>The Art of Royal Chauffeurage.<br><em>Founded on Absolute Discretion.</em></h1>
+        <p class="body-copy" style="color: #f1f5f9; font-size: 18px; max-width: 600px;">Conceived to serve heads of state, sovereign royalty, Fortune 100 leaders, and private aviation travelers with an uncompromising standard of poise, precision, and privacy.</p>
+      </div>
+    </section>
+
+    <!-- Key Numerical Proof Points Banner -->
+    <section style="background: var(--bg-surface); padding: 36px 0; border-bottom: 1.5px solid var(--border-color);">
+      <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; text-align: center;">
+        <div style="padding: 10px;">
+          <strong style="display: block; font-family: var(--font-display); font-size: 32px; color: var(--gold-primary);">2012</strong>
+          <span style="font-size: 13px; color: var(--text-muted); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Founded in Mayfair, London</span>
+        </div>
+        <div style="padding: 10px; border-inline: 1.5px solid var(--border-color);">
+          <strong style="display: block; font-family: var(--font-display); font-size: 32px; color: var(--gold-primary);">38 Global Hubs</strong>
+          <span style="font-size: 13px; color: var(--text-muted); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">NYC, London, Paris, Dubai & Zurich</span>
+        </div>
+        <div style="padding: 10px; border-inline: 1.5px solid var(--border-color);">
+          <strong style="display: block; font-family: var(--font-display); font-size: 32px; color: var(--gold-primary);">100% Vetted</strong>
+          <span style="font-size: 13px; color: var(--text-muted); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Security & Anti-Surveillance Cleared</span>
+        </div>
+        <div style="padding: 10px;">
+          <strong style="display: block; font-family: var(--font-display); font-size: 32px; color: var(--gold-primary);">&lt; 18 Months</strong>
+          <span style="font-size: 13px; color: var(--text-muted); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Fleet Age Limit Policy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heritage & Founding Story Section -->
+    <section class="section-pad">
+      <div class="container detail-grid">
+        <div class="detail-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Our Origins & Ethos</p>
+          <h2>A Heritage of Diplomatic Precision.</h2>
+          <p class="body-copy">Maison Royal was founded in 2012 by former diplomatic logistics officers and royal household protocol coordinators. Having witnessed firsthand the unpredictable nature of generic ridesharing and inconsistent town car providers, we set out to build an elite transportation institute.</p>
+          <p class="body-copy">Every journey with Maison Royal is orchestrated with military rigor and five-star hospitality. We do not simply drive our passengers; we safeguard their schedule, their privacy, and their peace of mind between meetings and private flights.</p>
+          <ul class="feature-list">
+            <li>Zero tolerance for schedule variance or tardiness</li>
+            <li>Legally binding Non-Disclosure Agreements for all personnel</li>
+            <li>In-house Master Driver Academy with 120-hour certification</li>
+            <li>Direct coordination with airport authorities and private FBO hangars</li>
+          </ul>
+          <a class="button button-dark" href="fleet.html">Inspect Our Fleet Collection</a>
+        </div>
+        <div class="detail-image" style="background-image: url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=85');" role="img" aria-label="Historic Mayfair London diplomatic executive chauffeur fleet"></div>
+      </div>
+    </section>
+
+    <!-- Four Pillars of Distinction -->
+    <section class="section-pad" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> The Sovereign Standard</p>
+            <h2>The Four Pillars of Maison Royal</h2>
+          </div>
+          <p class="body-copy">Why global family offices, Fortune 500 chairmen, and discerning travelers trust us exclusively.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-card-image" style="background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80'); height: 220px;" role="img" aria-label="Master Chauffeur Academy"></div>
+            <div class="service-card-body">
+              <span class="card-number">PILLAR 01</span>
+              <h3>The Chauffeur Academy</h3>
+              <p>Every Maison Royal chauffeur completes our rigorous 120-hour academy encompassing skid control, defensive evasive driving, anti-tailing awareness, first aid, and diplomatic etiquette.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-image" style="background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80'); height: 220px;" role="img" aria-label="Concours Fleet Condition"></div>
+            <div class="service-card-body">
+              <span class="card-number">PILLAR 02</span>
+              <h3>Concours Fleet Condition</h3>
+              <p>No vehicle in our active rotation is older than 18 months. Before every assignment, each saloon and SUV undergoes a 48-point mechanical ,full cabin sanitization, and tire pressure check.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-image" style="background-image: url('https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=900&q=80'); height: 220px;" role="img" aria-label="Absolute Confidentiality"></div>
+            <div class="service-card-body">
+              <span class="card-number">PILLAR 03</span>
+              <h3>Absolute Confidentiality</h3>
+              <p>What is spoken inside our cabins remains sacred. Every staff member signs comprehensive bilateral NDAs. Our booking platform utilizes 256-bit AES encryption with optional anonymous client codename dispatch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Leadership: Profile Pic Small Round -> Position Below -> Name Below -> Content -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Directorate & Officers</p>
+            <h2>Leadership Committed to Flawless Service</h2>
+          </div>
+          <p class="body-copy">Our executive board brings together over 75 collective years of royal protocol, defense logistics, and luxury concierge mastery.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 26px;">
+          <!-- Leader 1 -->
+          <article class="leader-card">
+            <img class="leader-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Lord Julian Ashford">
+            <span class="leader-position">Founder & Chief Executive Officer</span>
+            <h3 class="leader-name">Lord Julian Ashford</h3>
+            <p class="leader-bio">Former diplomatic logistics officer for the British Foreign Office. Over two decades coordinating high-security state delegations across Europe and the Americas.</p>
+          </article>
+
+          <!-- Leader 2 -->
+          <article class="leader-card">
+            <img class="leader-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Marcus Vance">
+            <span class="leader-position">Director of Fleet Operations</span>
+            <h3 class="leader-name">Marcus Vance</h3>
+            <p class="leader-bio">Master Driver with 18+ years of evasive driving instruction and VIP transit command. Oversees vehicle telemetry, driver academies, and vehicle specifications.</p>
+          </article>
+
+          <!-- Leader 3 -->
+          <article class="leader-card">
+            <img class="leader-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Elena Rostova">
+            <span class="leader-position">Head of VIP Concierge  & Operations</span>
+            <h3 class="leader-name">Elena Rostova</h3>
+            <p class="leader-bio">Former Les Clefs d'Or Concierge at leading palace hotels in Paris and Geneva. Curates bespoke client preferences, onboard amenities, and international aviation transfers.</p>
+          </article>
+
+          <!-- Leader 4 -->
+          <article class="leader-card">
+            <img class="leader-avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80" alt="Tariq Al-Mansoor">
+            <span class="leader-position">Director of Middle East & FBO</span>
+            <h3 class="leader-name">Tariq Al-Mansoor</h3>
+            <p class="leader-bio">Specializes in private aviation coordination at Dubai Al Maktoum VIP terminal and regional gulf royal fleet operations, concierige, ensuring zero delay tarmac connections.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chronology & Milestones -->
+    <section class="corporate-band">
+      <div class="container">
+        <div class="section-heading" style="margin-bottom: 36px;">
+          <div>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Historical Evolution</p>
+            <h2>Milestones in Sovereign Travel</h2>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <div style="padding: 24px; background: rgba(255, 255, 255, 0.05); border: 1.5px solid rgba(212, 175, 55, 0.35); border-radius: 6px;">
+            <strong style="color: #fde047; font-size: 20px; font-family: var(--font-display); display: block; margin-bottom: 6px;">2012 — Mayfair Inception</strong>
+            <p style="color: #e2e8f0; font-size: 14px; line-height: 1.7; margin: 0;">Founded in London with  long wheelbase saloons serving financial institutions and visiting foreign embassies.</p>
+          </div>
+
+          <div style="padding: 24px; background: rgba(255, 255, 255, 0.05); border: 1.5px solid rgba(212, 175, 55, 0.35); border-radius: 6px;">
+            <strong style="color: #fde047; font-size: 20px; font-family: var(--font-display); display: block; margin-bottom: 6px;">2016 — Manhattan Flagship</strong>
+            <p style="color: #e2e8f0; font-size: 14px; line-height: 1.7; margin: 0;">Opened 767 Fifth Avenue headquarters in New York, introducing 24/7dispatch for JFK, LGA, and Teterboro Airport FBOs.</p>
+          </div>
+
+          <div style="padding: 24px; background: rgba(255, 255, 255, 0.05); border: 1.5px solid rgba(212, 175, 55, 0.35); border-radius: 6px;">
+            <strong style="color: #fde047; font-size: 20px; font-family: var(--font-display); display: block; margin-bottom: 6px;">2021 — Armored Division</strong>
+            <p style="color: #e2e8f0; font-size: 14px; line-height: 1.7; margin: 0;">Inaugurated VR7/B6 ballistic protection certified vehicles and close protection motorcade escorts for international summits.</p>
+          </div>
+
+          <div style="padding: 24px; background: rgba(255, 255, 255, 0.05); border: 1.5px solid rgba(212, 175, 55, 0.35); border-radius: 6px;">
+            <strong style="color: #fde047; font-size: 20px; font-family: var(--font-display); display: block; margin-bottom: 6px;">2026 —  Digital Telemetry</strong>
+            <p style="color: #e2e8f0; font-size: 14px; line-height: 1.7; margin: 0;">Deployed live GPS radar tracking, client portal integration with open access, and hybrid/electric Maybach luxury fleet additions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Call to Action -->
+    <section class="closing-cta section-pad">
+      <div class="container closing-cta-inner">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Ready for Sovereign Transit</p>
+        <h2>Experience the <em>Royal Standard.</em></h2>
+        <p class="body-copy" style="max-width: 520px; margin-bottom: 24px;">Reserve your private journey with live vehicle tracking and dedicated concierge oversight.</p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+          <a class="button button-light" href="contact.html">Contact Global Dispatch Desk</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxurious Equally-Aligned Multi-Column Footer -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <!-- Column 1: Brand & Socials -->
+      <div class="footer-brand-col">
+        <a class="brand brand-footer" href="index.html" aria-label="Maison Royal">
+          <svg class="brand-logo-icon" width="34" height="34" viewBox="0 0 44 44" fill="none">
+            <rect width="44" height="44" rx="10" fill="#1A202C" />
+            <path d="M22 6L34 13V25L22 38L10 25V13L22 6Z" stroke="#D4AF37" stroke-width="2" fill="none" />
+            <path d="M15 27V16L22 22L29 16V27" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="10" r="2.2" fill="#FCE7A1" />
+          </svg>
+          <span class="brand-text">MAISON<span class="brand-gold">ROYAL</span></span>
+        </a>
+        <p class="footer-tagline">Executive chauffeur service and bespoke private transit, crafted for discerning travelers worldwide.</p>
+        <!-- Social Media Icons (X, Instagram, LinkedIn, Facebook) -->
+        <div class="footer-social-row" aria-label="Social media channels">
+          <a class="social-icon-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" title="Follow us on X" aria-label="X (formerly Twitter)">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.449-1.44z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="Follow us on LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a class="social-icon-btn" href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Navigation -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="fleet.html">Executive Fleet</a></li>
+          <li><a href="corporate.html">Corporate Travel</a></li>
+          <li><a href="blog.html">Journal & Insights</a></li>
+          <li><a href="contact.html">Contact & Map</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Client Portal -->
+      <div class="footer-col">
+        <h4>Client Portal</h4>
+        <ul class="footer-nav-list">
+          <li><a href="dashboard.html">Executive Dashboard</a></li>
+          <li><a href="contact.html#dispatch-form">Instant Journey Booking</a></li>
+          <li><a href="services.html#airport">Flight Tracker</a></li>
+          <li><a href="corporate.html#get-started">Open Corporate Account</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Support Services -->
+      <div class="footer-col">
+        <h4>Support Services</h4>
+        <ul class="footer-nav-list">
+          <li><a href="contact.html#dispatch-form">24/7 Dispatch Desk</a></li>
+          <li><a href="services.html#airport">Flight & FBO Support</a></li>
+          <li><a href="corporate.html#tier-calculator">Enterprise Travel Help</a></li>
+          <li><a href="contact.html#booking-faq">VIP Booking FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Centered Copyright (Privacy policy, terms & fleet dispatch removed!) -->
+    <div class="container footer-bottom-bar">
+      <p>© <span data-year></span> Maison Royal Worldwide Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

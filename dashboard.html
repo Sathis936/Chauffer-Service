@@ -9,8 +9,63 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=5.0">
+  <script src="script.js?v=5.0" defer></script>
+  <!-- Critical Mobile Navigation Rules (Prevents Caching & Clipping Issues) -->
+  <style>
+    @media (max-width: 920px) {
+      .nav-actions .rtl-toggle,
+      .nav-actions .theme-toggle,
+      .nav-actions .nav-login {
+        display: none !important;
+      }
+      .site-header {
+        background: var(--bg-surface) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        overflow: visible !important;
+      }
+      .primary-nav {
+        position: fixed !important;
+        top: 70px !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: calc(100vh - 70px) !important;
+        height: calc(100dvh - 70px) !important;
+        max-height: calc(100dvh - 70px) !important;
+        z-index: 99999 !important;
+      }
+      .primary-nav.is-open {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: translateY(0) !important;
+      }
+      .nav-dropdown {
+        width: 100% !important;
+      }
+      .nav-dropdown-menu {
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .nav-dropdown.is-active .nav-dropdown-menu,
+      .nav-dropdown:hover .nav-dropdown-menu,
+      [dir="rtl"] .nav-dropdown.is-active .nav-dropdown-menu {
+        transform: none !important;
+      }
+    }
+  </style>
 </head>
 <body class="dashboard-page">
   <!-- Centered Luxury Header -->
@@ -65,6 +120,22 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
         <a aria-current="page" href="dashboard.html">Dashboard</a>
+
+        <!-- Mobile Actions: RTL, Theme & Client Login Inside Menu -->
+        <div class="mobile-menu-actions">
+          <div class="mobile-actions-row">
+            <button class="nav-ctrl-btn rtl-toggle" type="button" title="Switch text direction RTL/LTR" aria-label="Toggle text direction RTL/LTR">
+              <span class="ctrl-text">RTL</span>
+            </button>
+            <button class="nav-ctrl-btn theme-toggle" type="button" title="Toggle theme" aria-label="Toggle dark/light theme">
+              <span class="theme-icon">🌙</span>
+            </button>
+          </div>
+          <a class="button button-gold mobile-login-btn" href="login.html">
+            <span>Login</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </nav>
 
       <!-- Right: Action Controls (RTL No Emoji, Theme Emoji Alone, Login) -->

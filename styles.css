@@ -435,6 +435,14 @@ button { -webkit-tap-highlight-color: transparent; cursor: pointer; }
   font-size: 14px;
 }
 
+body.menu-open {
+  overflow: hidden !important;
+}
+
+.mobile-menu-actions {
+  display: none;
+}
+
 /* ==========================================================================
    MOBILE HAMBURGER BUTTON — SECURELY ANCHORED, NEVER MOVES LEFT TO RIGHT
    ========================================================================== */
@@ -3007,15 +3015,25 @@ select option {
 }
 
 @media (max-width: 920px) {
+  /* In mobile menubar, hide RTL, Theme, and Login buttons so ONLY the Logo and Hamburger Toggle are visible! */
+  .nav-actions .rtl-toggle,
+  .nav-actions .theme-toggle,
+  .nav-actions .nav-login {
+    display: none !important;
+  }
+
   .site-header {
-    height: 74px;
+    height: 70px;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 1000;
-    overflow-x: clip;
+    z-index: 10000;
+    background: var(--bg-surface) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    overflow: visible !important;
   }
 
   /* Lock hamburger menu button firmly to the right, even when opened or in RTL */
@@ -3030,34 +3048,39 @@ select option {
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
-    gap: 8px;
+    gap: 0;
     flex-shrink: 0;
   }
   
   .primary-nav {
     position: fixed;
-    top: 74px;
+    top: 70px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100vw;
     max-width: 100vw;
+    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
     background: var(--bg-surface);
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    padding: 24px;
-    gap: 14px;
+    padding: 20px 24px 44px;
+    gap: 8px;
     border-top: 1.5px solid var(--border-color);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateY(-8px);
-    transition: all var(--transition-normal);
-    z-index: 999;
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.25s;
+    z-index: 99999;
     overflow-y: auto;
-    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
   }
   .primary-nav.is-open {
     opacity: 1;
@@ -3067,31 +3090,107 @@ select option {
   }
   .primary-nav > a {
     font-size: 16px;
-    padding: 12px 0;
+    font-weight: 600;
+    padding: 13px 8px;
     border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .primary-nav > a:hover,
+  .primary-nav > a[aria-current="page"] {
+    color: var(--gold-primary);
   }
   .nav-dropdown {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
   }
   .nav-dropdown-toggle {
     font-size: 16px;
-    padding: 12px 0;
+    font-weight: 600;
+    padding: 13px 8px;
     width: 100%;
     justify-content: space-between;
     border-bottom: 1px solid var(--border-subtle);
   }
   .nav-dropdown-menu {
+    display: none;
     position: static;
-    transform: none;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     box-shadow: none;
     border: 1px solid var(--border-color);
-    margin-top: 8px;
-    margin-bottom: 8px;
+    border-radius: var(--radius-sm);
+    margin: 8px 0;
+    padding: 6px;
     background: var(--bg-surface-elevated);
+  }
+  .nav-dropdown.is-active .nav-dropdown-menu,
+  .nav-dropdown:hover .nav-dropdown-menu,
+  [dir="rtl"] .nav-dropdown.is-active .nav-dropdown-menu,
+  [dir="rtl"] .nav-dropdown:hover .nav-dropdown-menu {
+    display: block !important;
+    transform: none !important;
+  }
+
+  /* Display Remaining Controls (RTL, Theme, Login) Inside the Menu */
+  .mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 16px;
+    border-top: 1.5px solid var(--border-color);
+  }
+  .mobile-actions-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+  .mobile-actions-row .nav-ctrl-btn {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    height: 44px !important;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1.5px solid var(--border-color);
+    background: var(--bg-surface-elevated);
+    color: var(--text-primary);
+  }
+  .mobile-actions-row .nav-ctrl-btn:hover {
+    border-color: var(--gold-primary);
+    color: var(--gold-primary);
+  }
+  .mobile-login-btn {
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
   }
 
   .intro-grid { grid-template-columns: 1fr; gap: 20px; }
@@ -3157,12 +3256,12 @@ select option {
     gap: 6px;
     flex-shrink: 0;
   }
-  .nav-ctrl-btn {
+  .nav-actions .nav-ctrl-btn {
     width: 34px;
     height: 34px;
     font-size: 11px;
   }
-  .nav-action.nav-login {
+  .nav-actions .nav-action.nav-login {
     height: 34px;
     padding: 0 10px;
     font-size: 12px;
@@ -3235,10 +3334,10 @@ select option {
 
 @media (max-width: 480px) {
   .site-header {
-    height: 66px;
+    height: 70px;
   }
   .primary-nav {
-    top: 66px;
+    top: 70px;
   }
   .container { width: calc(100% - 20px); }
   .container.nav-wrap {
@@ -3256,12 +3355,12 @@ select option {
   .nav-actions {
     gap: 4px;
   }
-  .nav-ctrl-btn {
+  .nav-actions .nav-ctrl-btn {
     width: 30px;
     height: 30px;
     font-size: 10px;
   }
-  .nav-action.nav-login {
+  .nav-actions .nav-action.nav-login {
     height: 30px;
     padding: 0 8px;
     font-size: 11px;
